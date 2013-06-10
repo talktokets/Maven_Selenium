@@ -8,19 +8,14 @@ import org.testng.annotations.Test;
 
 
 public class AppTest 
-    
 {
 	WebDriver driver;
-
 	@Test(description="This will open browser with google.com",invocationCount=3)
-	public void Test1(){
+	public void Test1()
+	{
 		
 		driver = new FirefoxDriver();
 		driver.get("http://www.google.com");
 		driver.quit();
-			}
-		
-	  
-	
-
+	}
 }
